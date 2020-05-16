@@ -118,3 +118,9 @@ source $ZSH/oh-my-zsh.sh
 
 # autosuggestion color settings
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
+
+# syntax higlight config
+# remove underline
+(( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
